@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { CgMenuCheese } from "react-icons/cg";
 import { GrClose } from "react-icons/gr";
-importimport  Image from "next/image";
-import MyBtn from "../components/button";
+import Image from "next/image";
+import MyBtn from "./mybutton";
  
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -34,11 +34,12 @@ const Navbar = () => {
  
   return (
     // <nav className="bg-white flex flex-col lg:flex-row lg:justify-center items-center rounded-md justify-around my-auto p-2 md:py-3 md:m-3">
-   <nav className="text-black bg-white shadow-2xl sticky top-0 z-10 shadow-cyan-200/50 flex flex-col lg:flex-row lg:justify-center items-center rounded-md justify-around my-auto p-2 md:py-3 md:m-3">
+    <nav className="text-black bg-white shadow-2xl sticky top-0 z-10 shadow-cyan-200/50 flex flex-col lg:flex-row lg:justify-center items-center rounded-md justify-around my-auto p-2 md:py-3 md:m-3">
       <div className="flex flex-row justify-between w-full">
         <div className="w-36 md:w-52 my-auto">
           <Link href="/">
-              <Image src="/logo.jpg" alt="logo" width="50" height="50" className="rounded-full object-cover"/>
+              <Image src={"/logo.jpg"} alt="logo" width={80} height={80} 
+              className="rounded-full"/>
           </Link>
         </div>
         <div
@@ -78,7 +79,7 @@ const Navbar = () => {
       <div className="hidden lg:flex ml-6">
         <Link href="/#contact" className="">
           <MyBtn textContent={"Contact"} />
-        </Link>
+          </Link>
       </div>
     </nav>
   );
