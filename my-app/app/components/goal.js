@@ -20,7 +20,7 @@ const Goal = () => {
  
   return (
     <div className="bg-gray-100/50 rounded-sm my-10 py-0 md:px-6 flex flex-col md:flex-row justify-between">
-   // … 
+   
     </div>
   );
 };

@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-between w-full">
         <div className="w-36 md:w-52 my-auto">
           <Link href="/">
-              <Image src="/logo.jpg" alt="logo" width="300" height="80" />
+              <Image src="/logo.jpg" alt="logo" width="50" height="50" className="rounded-full object-cover"/>
           </Link>
         </div>
         <div
