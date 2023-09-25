@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-between w-full">
         <div className="w-36 md:w-52 my-auto">
           <Link href="/">
-              <Image src="/next.svg" alt="logo" width="300" height="80" />
+              <Image src="/logo.jpg" alt="logo" width="300" height="80" />
           </Link>
         </div>
         <div
