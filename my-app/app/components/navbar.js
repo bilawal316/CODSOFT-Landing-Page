@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { CgMenuCheese } from "react-icons/cg";
 import { GrClose } from "react-icons/gr";
-import Image from "next/image";
+importimport  Image from "next/image";
 import MyBtn from "../components/button";
  
 const Navbar = () => {
