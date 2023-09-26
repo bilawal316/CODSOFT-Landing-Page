@@ -1,25 +1,11 @@
 "use client"
-import React, { useEffect, useState } from "react";
-import MyBtn from "../components/mybutton";
-import Butter from "buttercms";
+import Image from "next/image";
+import MyBtn from "./mybutton";
+
  
-const butter = Butter(`${process.env.NEXT_PUBLIC_BUTTER_CMS_API_KEY}`);
  
 const Hero = () => {
-  const [hero, setHero] = useState({});
- 
-  useEffect(() => {
-    butter.page
-      .retrieve("*", "home-page")
-      .then(function (resp) {
-        console.log(resp.data.data.fields.hero_section);
-        setHero(resp.data.data.fields.hero_section);
-      })
-      .catch(function (resp) {
-        console.log(resp);
-      });
-  }, []);
- 
+  
   return (
     <div
       id="home"
@@ -28,18 +14,20 @@ const Hero = () => {
       <div className="flex flex-col my-auto md:w-2/3">
         <div className="flex flex-col">
           <h1 className="font-extrabold text-4xl md:text-6xl">
-            {hero?.great_title}
+            Bridge Between companines and recuiters.
           </h1>
           <p className="text-sm mx-auto w-2/3 font-light md:text-md my-2 md:my-6">
-            {hero?.description}
+          "Discover the World's #1 ranked talent acquisition experts with 10 years of experience in various industries".
           </p>
         </div>
         <div className="mx-auto hover:cursor-pointer">
-          <MyBtn textContent={hero?.call_to_action_text} />
+          <MyBtn textContent="Discover Now" />
         </div>
       </div>
-      <img
-        src={hero?.hero_image}
+      <Image
+        src="/Interview.jpg"
+        width={900}
+        height={1000}
         alt="hero image"
         loading="lazy"
         className="invisible md:visible my-auto md:w-2/3"

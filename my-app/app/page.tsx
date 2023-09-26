@@ -4,7 +4,10 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Goal from "./components/goal";
 import Services from "./components/services";
+import Team from "./components/team";
 import Testimonials from "./components/testimonials";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
  
 const Home = () => {
   return (
@@ -20,8 +23,10 @@ const Home = () => {
         <Goal />
         <Services />
         <Testimonials />
+        <Team />
+        <Contact/>
       </main>
- 
+      <Footer/>
     </div>
   );
 };
