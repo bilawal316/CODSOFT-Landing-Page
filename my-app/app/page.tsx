@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { Metadata } from 'next';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Goal from './components/goal';
@@ -13,11 +12,9 @@ const Home = () => {
   return (
     <div className="flex min-h-screen flex-col py-2">
       <Head>
-        <Metadata>
           <title>My Page Title</title>
           <link rel="icon" href="/favicon.ico" />
           {/* Add any additional metadata tags here */}
-        </Metadata>
       </Head>
 
       <Navbar />

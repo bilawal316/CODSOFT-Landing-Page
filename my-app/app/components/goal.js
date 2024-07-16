@@ -14,10 +14,10 @@ const Goal = () => {
  
       <div className="flex flex-col justify-center my-auto p-6 md:w-3/5">
         <h5 className="text-gray-600 text-md md:my-4 font-semibold">
-        "LETS ACHIEVE MORE".
+        LETS ACHIEVE MORE.
         </h5>
         <h3 className="font-bold text-2xl md:text-4xl my-4">
-        "Get the benefit of working with the experts".
+        Get the benefit of working with the experts.
         </h3>
       </div>
     </div>

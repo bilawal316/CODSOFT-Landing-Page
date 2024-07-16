@@ -17,7 +17,7 @@ const Hero = () => {
             Bridge Between companines and recuiters.
           </h1>
           <p className="text-sm mx-auto w-2/3 font-light md:text-md my-2 md:my-6">
-          "Discover the World's #1 ranked talent acquisition experts with 10 years of experience in various industries".
+          Discover the Worlds #1 ranked talent acquisition experts with 10 years of experience in various industries.
           </p>
         </div>
         <div className="mx-auto hover:cursor-pointer">

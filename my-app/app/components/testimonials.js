@@ -60,7 +60,7 @@ const Testimonials = () => {
               </h2>
             </div>
             <p className="p-2 text-justify text-xs italic md:text-md font-medium">
-              "{testimonial.comment}"
+              {testimonial.comment}
             </p>
           </div>
         ))}
